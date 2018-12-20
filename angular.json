@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "work-in-progress": {
+    "ninis-work-in-progress": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/work-in-progress",
+            "outputPath": "dist/ninis-work-in-progress",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           },
@@ -61,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "work-in-progress:build"
+            "browserTarget": "ninis-work-in-progress:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "work-in-progress:build:production"
+              "browserTarget": "ninis-work-in-progress:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "work-in-progress:build"
+            "browserTarget": "ninis-work-in-progress:build"
           }
         },
         "test": {
@@ -106,7 +107,7 @@
         }
       }
     },
-    "work-in-progress-e2e": {
+    "ninis-work-in-progress-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "work-in-progress:serve"
+            "devServerTarget": "ninis-work-in-progress:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "work-in-progress:serve:production"
+              "devServerTarget": "ninis-work-in-progress:serve:production"
             }
           }
         },
@@ -135,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "work-in-progress"
+  "defaultProject": "ninis-work-in-progress"
 }

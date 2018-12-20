@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'work-in-progress'`, () => {
+  it(`should have as title 'ninis-work-in-progress'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('work-in-progress');
+    expect(app.title).toEqual('ninis-work-in-progress');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to work-in-progress!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ninis-work-in-progress!');
   });
 });
